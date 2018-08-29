@@ -20,23 +20,32 @@ var paths = {
   sass: ['./app/scss/**/*.scss'],
   js: ['./app/js/**/*.js'],
   html: ['./app/**/*.html', '!./app/build/**/*', './*.html'],
+  copy: ['./app/build/**'],
   images: [
     './app/images/**/*.{png,jpg,gif}',
     '!./app/images/**/bg-*.*',
     '!./app/images/**/*@2x.*',
     '!./app/images/**/*@3x.*'
-  ]
+  ],
 };
 
 
 // static server + watching js/scss/html/image files
-gulp.task('serve', ['partials', 'js', 'sass', 'watch'], function () {
+gulp.task('serve', ['partials', 'js', 'sass', 'watch', 'copy'], function () {
     browserSync.init({
         server: {
             baseDir: "./app/build/"
-        }
+        },
     });   
 });
+
+gulp.task('copy', ['copy'], function(){
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        },
+    }); 
+})
 
 
 //watch
@@ -46,6 +55,7 @@ gulp.task('watch', function(){
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.images, ['sprites']);
     gulp.watch(['./app/build/**'], browserSync.reload);
+    gulp.watch(paths.copy, ['copy']);
 })
 
 
@@ -55,7 +65,6 @@ gulp.task('partials', function () {
   gulp.src('./app/*.html')
            .pipe(injectPartials())
            .pipe(gulp.dest('./app/build'))
-           .pipe(gulp.dest('./'));
 });
 
 
@@ -68,7 +77,7 @@ gulp.task('js', function() {
         .pipe(uglify()) // 將 JavaScript 做最小化
         .pipe(rename({ extname: '.min.js' }))
         .pipe(sourcemaps.write()) 
-        .pipe(gulp.dest('./app/build/js')); // 指定最小化後的 JavaScript 檔案目錄
+        .pipe(gulp.dest('./app/build/js')) // 指定最小化後的 JavaScript 檔案目錄
 });
 
 
@@ -87,9 +96,13 @@ gulp.task('sass', function() {
 	    }))
 	    .pipe(rename({ extname: '.min.css' }))
 	    .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./app/build/css')); // 指定編譯後的 css 檔案目錄
+        .pipe(gulp.dest('./app/build/css')) // 指定編譯後的 css 檔案目錄
 });
 
+gulp.task('copy', function(){
+    gulp.src('./app/build/**')
+    .pipe(gulp.dest('./'))
+});
  
 
 // 建立預設gulp task，執行serve
