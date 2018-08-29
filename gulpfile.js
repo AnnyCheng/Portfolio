@@ -19,7 +19,7 @@ var plumber = require("gulp-plumber");
 var paths = {
   sass: ['./app/scss/**/*.scss'],
   js: ['./app/js/**/*.js'],
-  html: ['./app/**/*.html', '!./app/build/**/*'],
+  html: ['./app/**/*.html', '!./app/build/**/*', './*.html'],
   images: [
     './app/images/**/*.{png,jpg,gif}',
     '!./app/images/**/bg-*.*',
@@ -54,7 +54,8 @@ gulp.task('watch', function(){
 gulp.task('partials', function () {
   gulp.src('./app/*.html')
            .pipe(injectPartials())
-           .pipe(gulp.dest('./app/build'));
+           .pipe(gulp.dest('./app/build'))
+           .pipe(gulp.dest('./'));
 });
 
 
