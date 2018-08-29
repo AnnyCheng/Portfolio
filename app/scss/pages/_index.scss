@@ -1,0 +1,43 @@
+.banner {
+    position: relative;
+}
+
+.subtitle {
+    color: white;
+    text-shadow: 0 2px 2px $main-grey;
+    font-size: 2.2rem; 
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.section {
+    margin: 50px 0;
+    color: $main-grey;
+    .title {
+        font-size: 3rem;
+    }
+    .vertical-middle {
+        vertical-align: middle;
+    }
+    .table {
+        background: $table-grey;
+        tr {
+            border-bottom: 5px solid white;
+        }
+    }
+}
+.about {
+    text-align: center;
+    font-size: 1rem;
+    .table {
+        tr {
+            td {
+                &:first-child {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

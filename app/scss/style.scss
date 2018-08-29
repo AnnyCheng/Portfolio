@@ -6,9 +6,11 @@
 @import "main";
 
 //componentes
-
+@import "componentes/color";
+@import "componentes/header";
 
 //pages
+@import "pages/index";
 
 
 @import "rwd";

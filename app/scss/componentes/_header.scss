@@ -1,0 +1,43 @@
+.header {
+    padding: 20px 0;
+    .web-title {
+        margin: 0;
+        a {
+            color: $main-grey;
+            text-decoration: none;
+            font-size: 36px;
+        }
+    }
+}
+
+.menu {
+    li {
+        display: inline-block;
+        padding: 10px 15px;
+        a {
+            color: $light-grey;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all .25s ease-in;
+            position: relative;
+            &:hover {
+                color: $main-grey;
+                &:after {
+                    width: 25px;
+                }
+            }
+            &:after {
+                content: '';
+                display: inline-block;
+                height: 2px;
+                width: 0;
+                background: $main-grey;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .25s ease-in;
+            }
+        }
+    }
+}
