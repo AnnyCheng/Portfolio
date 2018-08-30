@@ -59,6 +59,12 @@
                 }
             }
         }
+        .web {
+            display: table-cell;
+        }
+        .mobile {
+            display: none;
+        }
     }
 }
 
@@ -101,6 +107,16 @@
 }
 
 @media(max-width: 767px) {
+    .about {
+        .table {
+            .web {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+    }
     .banner {
         margin-top: 108px;
         padding: 6% 0;
