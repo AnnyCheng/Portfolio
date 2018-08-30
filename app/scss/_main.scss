@@ -15,3 +15,13 @@ ul, ol {
         padding: 0;
     }
 }
+
+.btn {
+    background: $main-blue;
+    color: white; 
+    padding: 10px 30px;  
+    &:hover {
+        border: 1px solid $main-blue;
+        background: none;
+    }
+}

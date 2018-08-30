@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 
-
+@import "componentes/color";
 @import "mixin";
 @import "main";
 
 //componentes
-@import "componentes/color";
+
 @import "componentes/header";
 @import "componentes/footer";
 
