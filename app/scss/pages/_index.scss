@@ -88,6 +88,7 @@
         top: 0;
         left: 0;
         text-decoration: none;
+        padding: 15px;
         .text {
             text-align: center;
             position: relative;
@@ -96,12 +97,13 @@
             color: white;
         }
         .project-name {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 5px;
             font-weight: bold;
         }
         .project-response {
             font-size: 1rem;
+            margin-bottom: 0;
         }
     }
 }
@@ -144,6 +146,25 @@
     }
     .project-item {
         margin-bottom: 10px;
+    }
+    .project-list {
+        .overlay {
+            opacity: .8;
+            height: auto;
+            top: auto;
+            bottom: 0;
+            background: none;
+            padding: 0;
+            .text {
+                top: 0;
+                transform: none;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+            }
+            .project-name {
+                font-size: 1rem;
+            }
+        }
     }
     .header {
         padding-bottom: 0;
