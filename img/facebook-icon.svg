@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="38px" viewBox="0 0 18 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-712.000000, -3126.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="facebook-logo-button" transform="translate(712.000000, 3126.000000)">
+                <path d="M16.8535291,19.0151657 L11.5639647,19.0151657 C11.5639647,27.5251085 11.5639647,38 11.5639647,38 L3.72587538,38 C3.72587538,38 3.72587538,27.6266528 3.72587538,19.0151657 L0,19.0151657 L0,12.3053271 L3.72587538,12.3053271 L3.72587538,7.96529585 C3.72587538,4.85698421 5.19265233,-3.55271368e-15 11.6359939,-3.55271368e-15 L17.4441687,0.0224188791 L17.4441687,6.53576262 C17.4441687,6.53576262 13.9147367,6.53576262 13.2284946,6.53576262 C12.5422526,6.53576262 11.566584,6.88127711 11.566584,8.36356065 L11.566584,12.3066458 L17.5384615,12.3066458 L16.8535291,19.0151657 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

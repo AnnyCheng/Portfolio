@@ -1,4 +1,16 @@
-@media(max-width: 991px) {
+.web {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+@media(max-width: 767px) {
+    .web {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
     
 }
 @media(max-width: 480px) {

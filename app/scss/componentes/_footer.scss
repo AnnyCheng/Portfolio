@@ -1,0 +1,25 @@
+.footer {
+    background: #F2F5F6;
+    padding: 50px 0;
+    margin-top: 80px;
+    color: $main-grey;
+    text-align: center;
+    .item-circle {
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        border-radius: 100%;
+        background: $light-grey;
+        text-align: center;
+        margin: 10px;
+        transition: all .25s ease-in;
+        img {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            background: $main-grey;
+        }
+    }
+}
