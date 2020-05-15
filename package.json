@@ -26,6 +26,7 @@
     "gulp-watch": "^4.3.5"
   },
   "dependencies": {
+    "braces": "^3.0.2",
     "clean-css": "^4.2.3",
     "cowsay": "^1.4.0",
     "graceful-fs": "^4.2.4",
