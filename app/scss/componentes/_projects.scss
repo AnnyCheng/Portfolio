@@ -1,0 +1,10 @@
+.banner {
+    &.banner-projects {
+        position: relative;
+        padding: 7% 0;
+        margin-top: 90px;
+        .title {
+            margin-left: 0;
+        }
+    }
+}

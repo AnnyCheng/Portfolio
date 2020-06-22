@@ -9,9 +9,12 @@
 
 @import "componentes/header";
 @import "componentes/footer";
+@import "componentes/projects";
+@import "componentes/table";
 
 //pages
 @import "pages/index";
+@import "pages/airfryer";
 
 
 @import "rwd";
